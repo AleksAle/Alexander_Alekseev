@@ -1,0 +1,274 @@
+body {
+  background-image: linear-gradient(45deg, #000000, #20930f);
+
+  background-repeat: no-repeat;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.sidebar {
+  display: block;
+  color: aliceblue;
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  border: 3px solid #f5f5f5;
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+}
+
+.menu {
+  top: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15vw;
+  gap: 40px;
+  margin-left: 15%;
+}
+.menu1 {
+  text-align: center;
+}
+
+.lightbutton {
+  margin: 0.8rem 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  height: 7vh;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: #111;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 3;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.lightbutton:before {
+  content: "";
+  background: linear-gradient(45deg, #f303f3, #04f941, #fffb00, #ff0000);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background-size: 400%;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.lightbutton::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.lightbutton:active {
+  color: #000;
+}
+
+.lightbutton:active::after {
+  background: transparent;
+}
+
+.lightbutton:hover::before {
+  opacity: 1;
+}
+
+.text {
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+
+  background-image: linear-gradient(45deg, #000000, #20930f);
+}
+.Aboutme {
+  display: block;
+  color: aliceblue;
+  height: 15vh;
+  width: 95vw;
+  margin-top: 2vh;
+  margin-left: 36vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+}
+.IT {
+  color: aliceblue;
+  height: 15vh;
+  width: 95vw;
+  margin-top: 18vh;
+  margin-left: 36vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+}
+.Hobby {
+  color: aliceblue;
+  height: 15vh;
+  width: 95vw;
+  margin-top: 34vh;
+  margin-left: 36vh;
+  margin-right: 5vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+}
+.Photo {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  height: 40vh;
+  width: 14vw;
+  margin-top: 50vh;
+  margin-left: 21vw;
+  margin-right: 5vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+  background-image: url(../foto/ELBRUS.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Photo1 {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  height: 40vh;
+  width: 14vw;
+  margin-top: 50vh;
+  margin-left: 36vw;
+  margin-right: 5vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+  overflow-x: hidden;
+  background-image: url(../foto/MARATON.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Photo2 {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  height: 40vh;
+  width: 14vw;
+  margin-top: 50vh;
+  margin-left: 51vw;
+
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: url(../foto/NORTH_LIGHT.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+}
+
+.Photo3 {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  height: 40vh;
+  width: 14vw;
+  margin-top: 50vh;
+  margin-left: 66vw;
+
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+  background-image: url(../foto/TONY.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Photo4 {
+  display: flex;
+  color: aliceblue;
+  height: 40vh;
+  width: 14vw;
+  margin-top: 50vh;
+  margin-left: 81vw;
+
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: url(../foto/TONY.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+  background-image: url(../foto/Egypt.JPEG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer {
+  display: block;
+  color: aliceblue;
+  height: 15vh;
+  width: 95vw;
+  margin-top: 92vh;
+  margin-left: 36vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  /* Отключает горизонтальный скролл */
+  overflow-x: hidden;
+}
